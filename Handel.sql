@@ -1,9 +1,10 @@
 --------------------------------------------------------
---  File created - pi¹tek-maja-10-2024   
+--  File created - piï¿½tek-maja-10-2024   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Sequence KATEGORIE_PRODUKTOW_SEQ
 --------------------------------------------------------
+
 
    CREATE SEQUENCE  "SPRZEDAWCA"."KATEGORIE_PRODUKTOW_SEQ"  MINVALUE 1 MAXVALUE 99999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  CYCLE  NOKEEP  NOSCALE  GLOBAL ;
 --------------------------------------------------------
@@ -169,25 +170,25 @@ SET DEFINE OFF;
 Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('6','Meble');
 Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('7','Sprzet elektryczny');
 Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('1','Sportowe');
-Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('2','Spo¿ywcze');
-Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('3','Odzie¿owe');
+Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('2','Spoï¿½ywcze');
+Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('3','Odzieï¿½owe');
 Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('4','Samochodowe');
-Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('5','Wêdkarskie');
+Insert into SPRZEDAWCA.KATEGORIEPRODUKTOW (KATEGORIAID,NAZWA) values ('5','Wï¿½dkarskie');
 REM INSERTING into SPRZEDAWCA.KLIENCI
 SET DEFINE OFF;
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('1','Jan','Kowalski','Jan@gmail.oom');
-Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('2','Micha³','Nowak','Micha³@gmail.oom');
+Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('2','Michaï¿½','Nowak','Michaï¿½@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('3','Kamil','Wielkopolski','Kamil@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('4','Mateusz','Koniecpolski','Mateusz@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('5','Andrzej','Rydz','Andrzej@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('6','Marek','Abramek','Marek@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('7','Wojciech','Abramowicz','Wojciech@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('8','Kamil','Abramiuk','Abramiuk@gmail.oom');
-Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('9','Bogus³aw','Abramowska','Bogus³aw@gmail.oom');
+Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('9','Bogusï¿½aw','Abramowska','Bogusï¿½aw@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('10','Ryszard','Achtelik','Ryszard@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('11','Krzysztof','Adach','Krzysztof@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('12','Patryk','Adamiuk','Patryk@gmail.oom');
-Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('13','Julia','¯ywio³ek','Julia@gmail.oom');
+Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('13','Julia','ï¿½ywioï¿½ek','Julia@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('14','Agnieszka','Andrejczuk','Agnieszka@gmail.oom');
 Insert into SPRZEDAWCA.KLIENCI (KLIENTID,IMIE,NAZWISKO,EMAIL) values ('15','Natalia','Andrusiuk','Natalia@gmail.oom');
 REM INSERTING into SPRZEDAWCA.POZYCJEZAMOWIENIA
@@ -198,7 +199,7 @@ Insert into SPRZEDAWCA.POZYCJEZAMOWIENIA (POZYCJAZAMOWIENIAID,ZAMOWIENIEID,PRODU
 Insert into SPRZEDAWCA.POZYCJEZAMOWIENIA (POZYCJAZAMOWIENIAID,ZAMOWIENIEID,PRODUKTID,ILOSC,CENAZASZTUKE) values ('12','4','4','2','15');
 REM INSERTING into SPRZEDAWCA.PRODUKTY
 SET DEFINE OFF;
-Insert into SPRZEDAWCA.PRODUKTY (PRODUKTID,NAZWA,CENA,KATEGORIAID) values ('1','£o¿ko','3000','6');
+Insert into SPRZEDAWCA.PRODUKTY (PRODUKTID,NAZWA,CENA,KATEGORIAID) values ('1','ï¿½oï¿½ko','3000','6');
 Insert into SPRZEDAWCA.PRODUKTY (PRODUKTID,NAZWA,CENA,KATEGORIAID) values ('2','Laptop','4000','7');
 Insert into SPRZEDAWCA.PRODUKTY (PRODUKTID,NAZWA,CENA,KATEGORIAID) values ('3','Frytki','10','2');
 Insert into SPRZEDAWCA.PRODUKTY (PRODUKTID,NAZWA,CENA,KATEGORIAID) values ('4','Pizza','15','2');
@@ -291,7 +292,7 @@ COMMIT;
 EXCEPTION
 WHEN OTHERS THEN
 ROLLBACK;
-DBMS_OUTPUT.PUT_LINE('B³¹d: ' || SQLERRM);
+DBMS_OUTPUT.PUT_LINE('Bï¿½ï¿½d: ' || SQLERRM);
 END AktualizujCeneProduktu;
 
 /
@@ -308,7 +309,7 @@ COMMIT;
 EXCEPTION
 WHEN OTHERS THEN
 ROLLBACK;
-DBMS_OUTPUT.PUT_LINE('B³¹d: ' || SQLERRM);
+DBMS_OUTPUT.PUT_LINE('Bï¿½ï¿½d: ' || SQLERRM);
 END DodajKategorie;
 
 /
@@ -324,11 +325,11 @@ INSERT INTO Zamowienia (KlientID, DataZamowienia, Status)
 VALUES (p_klientID, p_dataZamowienia, 'Nowe')
 RETURNING ZamowienieID INTO v_zamowienieID;
 COMMIT;
-DBMS_OUTPUT.PUT_LINE('Utworzono zamówienie o ID: ' || v_zamowienieID);
+DBMS_OUTPUT.PUT_LINE('Utworzono zamï¿½wienie o ID: ' || v_zamowienieID);
 EXCEPTION
 WHEN OTHERS THEN
 ROLLBACK;
-DBMS_OUTPUT.PUT_LINE('B³¹d: ' || SQLERRM);
+DBMS_OUTPUT.PUT_LINE('Bï¿½ï¿½d: ' || SQLERRM);
 END UtworzZamowienie;
 
 /
@@ -352,7 +353,7 @@ END LOOP;
 CLOSE c_produkty;
 EXCEPTION
 WHEN OTHERS THEN
-DBMS_OUTPUT.PUT_LINE('B³¹d: ' || SQLERRM);
+DBMS_OUTPUT.PUT_LINE('Bï¿½ï¿½d: ' || SQLERRM);
 END WyswietlProduktyKategorii;
 
 /
@@ -373,7 +374,7 @@ END pakiet_klienci;
   CREATE OR REPLACE EDITIONABLE PACKAGE "SPRZEDAWCA"."PAKIET_PRODUKTY" AS
 -- Typ referencyjny dla kursora
 TYPE ref_cursor IS REF CURSOR;
--- Funkcja zwracaj¹ca kursor z wybranymi danymi produktów
+-- Funkcja zwracajï¿½ca kursor z wybranymi danymi produktï¿½w
 FUNCTION pobierz_wybrane_produkty RETURN ref_cursor;
 END pakiet_produkty;
 
@@ -404,7 +405,7 @@ SELECT * FROM klienci;
 RETURN c_klienci;
 EXCEPTION
 WHEN OTHERS THEN
-DBMS_OUTPUT.PUT_LINE('Wyst¹pi³ b³¹d: ' || SQLERRM);
+DBMS_OUTPUT.PUT_LINE('Wystï¿½piï¿½ bï¿½ï¿½d: ' || SQLERRM);
 RAISE;
 END pobierz_klientow;
 END pakiet_klienci;
@@ -426,9 +427,9 @@ RETURN c_produkty;
 EXCEPTION
 WHEN NO_DATA_FOUND THEN
 DBMS_OUTPUT.PUT_LINE('Nie znaleziono danych.');
-RETURN c_produkty; -- Zwróæ pusty kursor
+RETURN c_produkty; -- Zwrï¿½ï¿½ pusty kursor
 WHEN OTHERS THEN
-DBMS_OUTPUT.PUT_LINE('Wyst¹pi³ nieoczekiwany b³¹d: ' || SQLERRM);
+DBMS_OUTPUT.PUT_LINE('Wystï¿½piï¿½ nieoczekiwany bï¿½ï¿½d: ' || SQLERRM);
 RAISE;
 END pobierz_wybrane_produkty;
 END pakiet_produkty;
@@ -449,12 +450,12 @@ RETURN c_zamowienia;
 EXCEPTION
 WHEN NO_DATA_FOUND THEN
 DBMS_OUTPUT.PUT_LINE('Nie znaleziono danych.');
--- Zwróæ pusty kursor, jeœli nie znaleziono danych
+-- Zwrï¿½ï¿½ pusty kursor, jeï¿½li nie znaleziono danych
 OPEN c_zamowienia FOR SELECT * FROM dual WHERE 1=0;
 RETURN c_zamowienia;
 WHEN OTHERS THEN
-DBMS_OUTPUT.PUT_LINE('Wyst¹pi³ nieoczekiwany b³¹d: ' || SQLERRM);
--- Ponownie otwórz pusty kursor przed ponownym zg³oszeniem wyj¹tku
+DBMS_OUTPUT.PUT_LINE('Wystï¿½piï¿½ nieoczekiwany bï¿½ï¿½d: ' || SQLERRM);
+-- Ponownie otwï¿½rz pusty kursor przed ponownym zgï¿½oszeniem wyjï¿½tku
 OPEN c_zamowienia FOR SELECT * FROM dual WHERE 1=0;
 RETURN c_zamowienia;
 END pobierz_zamowienia;
@@ -467,13 +468,13 @@ SELECT * FROM PozycjeZamowienia WHERE ZamowienieID = zamowienie_id;
 RETURN c_pozycje;
 EXCEPTION
 WHEN NO_DATA_FOUND THEN
-DBMS_OUTPUT.PUT_LINE('Nie znaleziono pozycji dla zamówienia o ID: ' || zamowienie_id);
--- Zwróæ pusty kursor, jeœli nie znaleziono pozycji zamówienia
+DBMS_OUTPUT.PUT_LINE('Nie znaleziono pozycji dla zamï¿½wienia o ID: ' || zamowienie_id);
+-- Zwrï¿½ï¿½ pusty kursor, jeï¿½li nie znaleziono pozycji zamï¿½wienia
 OPEN c_pozycje FOR SELECT * FROM dual WHERE 1=0;
 RETURN c_pozycje;
 WHEN OTHERS THEN
-DBMS_OUTPUT.PUT_LINE('Wyst¹pi³ nieoczekiwany b³¹d: ' || SQLERRM);
--- Ponownie otwórz pusty kursor przed ponownym zg³oszeniem wyj¹tku
+DBMS_OUTPUT.PUT_LINE('Wystï¿½piï¿½ nieoczekiwany bï¿½ï¿½d: ' || SQLERRM);
+-- Ponownie otwï¿½rz pusty kursor przed ponownym zgï¿½oszeniem wyjï¿½tku
 OPEN c_pozycje FOR SELECT * FROM dual WHERE 1=0;
 RETURN c_pozycje;
 END pobierz_pozycje_zamowienia;
